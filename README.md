@@ -5,20 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.1
 
-* System dependencies
+Git clone le repo,
+Lancez la commande bundle install
 
-* Configuration
+Lancez la commande rails db:migrate si il reste des migrations a effectuer (ce qui ne devrait pas etre le cas)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Lancez rails server puis se rendre sur localhost:3000
