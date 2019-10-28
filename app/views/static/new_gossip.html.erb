@@ -26,4 +26,13 @@
   </div>
 </nav>
 <h1>Static#new_gossip</h1>
-<p>Find me in app/views/static/new_gossip.html.erb</p>
+
+
+<form action="/gossipnew" method="post">
+   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+   Ton prenom ici :<input type="text" name="first_name">
+   Ton nom ici :<input type="text" name="last_name">
+   Titre de ton potin ici :<input type="text" name="title">
+   L'objet du potin ici :<input type="text" name="content">
+   <input type="submit" name="Envoyer">
+   </form>
