@@ -27,4 +27,13 @@
 </nav>
 
 <h1>Page d'accueil</h1>
-<p>Find me in app/views/static/index.html.erb</p>
+
+<% Potin.all.each do |potin| %>
+<div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+  <div class="card-header"><%= potin.author.first_name %> <%= potin.author.last_name %></div>
+  <div class="card-body">
+    <h4 class="card-title"><%= potin.title %></h4>
+    <p class="card-text"><%= potin.content %></p>
+  </div>
+</div>
+<% end %>
